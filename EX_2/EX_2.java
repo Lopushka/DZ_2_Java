@@ -6,7 +6,7 @@ import java.util.*;;
 public class EX_2 {
     public static void main(String[] args) throws Exception {
         int[] mas = { 105, 32, 4, 6, 7 };
-        FileWriter fw = new FileWriter( "1.txt" );
+        FileWriter fw = new FileWriter( "EX_2.txt" );
         boolean isSorted = false;
         int buf;
         while (!isSorted) {
