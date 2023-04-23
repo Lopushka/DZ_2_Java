@@ -1,10 +1,12 @@
 package EX_4;
 import java.util.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 public class EX_4 {
     private static final Logger LOGGER = Logger.getGlobal();
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
+        LOGGER.log(Level.INFO,"info start prog");
         System.out.print("Первое число: ");
         double numder1 = iScanner.nextDouble();
         System.out.print("Введите действие (+,-,*,/): ");
@@ -29,7 +31,7 @@ public class EX_4 {
             default:
                 System.out.println("Ведите правильно действие(+,-,*,/)");
                 iScanner.close();
-                LOGGER.info("Err: 69");
+                LOGGER.log(Level.WARNING, "Fatal 69",new Throwable());
                 return;
                 
 
